@@ -37,3 +37,52 @@ if (amtScrolled > h1Top + h1Height) {
 }
 
 })
+
+
+// let theStateOfThings = function () {
+    let theStateOfThings = () => {
+
+        let winH = document.documentElement.clientHeight
+        let winW = document.documentElement.clientWidth
+        let docH = document.documentElement.scrollHeight
+        let docW = document.documentElement.scrollWidth
+        let winY = window.scrollY
+        let winX = window.scrollX
+        let maxY = docH - winH
+        let maxX = docW - winW
+        let pctY = Math.round(winY / Math.max(maxY, 1) * 100)
+        let pctX = Math.round(winX / Math.max(maxX, 1) * 100)
+    
+    
+        let infoForElement = ''	
+    
+        let checkOneSection = ($sec) => {
+            let fromD = $sec.offsetTop
+            let top = $sec.getBoundingClientRect().top
+            let bottom = $sec.getBoundingClientRect().bottom
+            
+            let theId = $sec.getAttribute('id')
+    
+            if (top < winH && bottom > 0) {
+                infoForElement += `<li class="bold>${theId}</li>`
+            } else {
+                infoForElement += `<li class="bold"><a href="#${theId}">${theId}</a></li>`
+            }
+        }
+    
+        // Iterate through each matching eleemnt, call the checkOneSection function for each one
+        document.querySelectorAll('.moment').forEach(checkOneSection)
+        
+    
+        $yearBar.innerHTML = `            
+
+        <ol>${infoForElement}</ol>
+
+         `;
+
+    }
+    
+    // 1                       2     3
+    window.addEventListener('load', theStateOfThings)
+    window.addEventListener('scroll', theStateOfThings)
+    window.addEventListener('resize', theStateOfThings)
