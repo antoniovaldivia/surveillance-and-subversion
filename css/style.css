@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+mono:400,400i,900,900i&display=swap');
 body {
     background-color: lightcyan;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto mono', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     padding: 2em;
 }
 
+.header {
+    background-color: #ffffff;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
+}
 
 h1 {
-    font-size: 3em;
-    font-weight: 700;
+    font-size: 2.3em;
+    font-weight: 900;
     color: white;
     background-color: tomato;
-    transition: all 0.5s;
+    transition: all 1s;
     margin-bottom: 0.5em;
 }
 
-h2 {
-    margin-top: 1em;
-    font-weight: 700;
-    font-size: 2em;    
+h3 {
+    font-size: 1.3em;
+    font-weight: 900;
 }
 
 img {
@@ -33,7 +39,28 @@ img {
     border-style: solid;
     margin-top: 1em;
     margin-bottom: 1em;
+}
 
+a {
+    color: tomato;
+}
+
+time {
+    font-size: 0.9em;
+    font-weight: 900;
+}
+
+address {
+    font-size: 0.7em;
+    font-weight: 900;
+}
+
+.green {
+    background-color: #b3fab3;
+}
+
+.white {
+    background-color: #ffffff;
 }
 
 .progressText {
@@ -50,7 +77,6 @@ img {
     left: 0;
     width: 100%;
     height: 0.3em;
-
 }
 
 .progress {
@@ -63,38 +89,107 @@ img {
     overflow: hidden;
     color: white;
     font-weight: 900;
-
 }
 
 .titleBar {
     background-color: tomato;
     position: fixed;
-    top: 0.3em;
+    top: 0.2em;
     left: 0;
     width: 100%;
     height: 1.2em;
     overflow: hidden;
     color: white;
     font-weight: 900;
+    font-size: 1.3em;
     display: none;
 }
 
-.hide  {
+.yearBar {
+    background-color: white;
+    position: fixed;
+    top: 2.2em;
+    left: 0;
+    width: 100%;
+    height: 1.2em;
+    overflow: hidden;
+    font-size: 0.8em;
+    font-weight: 900;
+    display: none;
+    text-align: left;
+}
+
+.hide {
     display: none;
 }
 
-.show  {
+.show {
     display: block;
 }
-.reading {
-    font-size: 0.8em;
-    font-weight: 800;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.box {
+    width: auto;
+}
+
+.moment {
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.moment img {
+    max-width: 17em;
+}
+
+article footer {
+    font-size: 0.7em;
+    margin-top: 0.1em;
 }
 
 footer {
-    text-align: center;
     font-size: 0.8em;
     margin-top: 1.5em;
 }
+
+.second {
+    align-self: auto; 
+    margin: auto;
+    max-width: 95%;
+}
+
+@media screen and (min-width: 50em) {
+    .header {
+        background-color: #ffffff;
+        padding: 1.5em;
+        text-align: center;
+        font-size: 2em;
+    }
+    .momentlayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 90em) {
+        h1 {
+            font-size: 3em;
+        }
+        .moment img {
+            max-width: 18em;
+        }
+        .masthead img {
+            max-width: 90%;
+        }
+        .masthead p {
+            width: 60%;
+        }
+    }
