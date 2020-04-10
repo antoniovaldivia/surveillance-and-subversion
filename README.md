@@ -1,4 +1,4 @@
-<h1>Surveillance & subversion timeline<h2>
+<h1>Surveillance & subversion a timeline<h2>
 <p>A brief history of electronic surveillance and how citizens had evaded it by Antonio Valdivia & Mani Rezaeian.<p>
 
 <h2>To be subversive<h2>
