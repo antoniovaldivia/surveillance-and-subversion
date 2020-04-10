@@ -98,7 +98,7 @@ address {
     top: 0.2em;
     left: 0;
     width: 100%;
-    height: 1.2em;
+    height: 1.5em;
     overflow: hidden;
     color: white;
     font-weight: 700;
@@ -109,29 +109,31 @@ address {
 .yearBar {
     background-color: white;
     position: fixed;
-    top: 2.2em;
+    top: 2.3em;
     left: 0;
     width: 100%;
-    height: 2.2em;
+    height: 1.4em;
     overflow: hidden;
-    font-size: 0.8em;
-    font-weight: 700;
+    font-size:0.8em;
     display: none;
-    text-align: left;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: center;
+}
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    padding-right: 0.05em;
 }
 
-.yearBar ol {
-padding-left: 0.5em;
-padding-right: 0.5em;
-
+.nav a{
+    display:inline-block;
 }
-.yearBar li {
-    float:left;
-    margin-left:0.5em;
-    font-size: 1em;
-    display: block;
-
-  }
 
 .hide {
     display: none;
@@ -198,6 +200,8 @@ footer {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
 @media screen and (min-width: 50em) {
     .header {
         background-color: #ffffff;
@@ -209,9 +213,10 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     @media screen and (min-width: 90em) {
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .masthead img {
             max-width: 90%;

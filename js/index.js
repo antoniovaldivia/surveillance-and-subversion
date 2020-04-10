@@ -64,9 +64,9 @@ if (amtScrolled > h1Top + h1Height) {
             let theId = $sec.getAttribute('id')
     
             if (top < winH && bottom > 0) {
-                infoForElement += `<li class="bold>${theId}</li>`
+                infoForElement += `<li>${theId}</li>`
             } else {
-                infoForElement += `<li class="bold"><a href="#${theId}">${theId}</a></li>`
+                infoForElement += `<li><a href="#${theId}">${theId}</a></li>`
             }
         }
     
@@ -76,7 +76,7 @@ if (amtScrolled > h1Top + h1Height) {
     
         $yearBar.innerHTML = `            
 
-        <ol>${infoForElement}</ol>
+        <ol class="nav">${infoForElement}</ol>
 
          `;
 
