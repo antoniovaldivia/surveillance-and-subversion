@@ -1,5 +1,5 @@
-<h1>Surveillance & subversion timeline<h2>
-<p>A brief history of electronic surveillance and how citizens had evaded it by Antonio Valdivia & Mani Rezaeian.<p>
+<h1>Surveillance & subversion: a timeline<h2>
+<p>A brief history of electronic surveillance and how citizens had evaded it. Designed by Antonio Valdivia & Mani Rezaeian.<p>
 
 <h2>To be subversive<h2>
 <p>Subversion is literally the "turning over" of something. In the 1950s and '60s, many people worried about the communist subversion of the U.S. government, though they often saw subversive activities where none existed. Nondemocratic governments often claim that anyone who disagrees with them or joins a demonstration is subversive. On this timeline, we present some of the most important technological events and its counterpart in the “subversive” artistic, cultural and social sphere.</p>
