@@ -21,6 +21,10 @@ h1 {
     transition: all 1s;
     margin-bottom: 0.5em;
 }
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 h3 {
     font-size: 1.3em;
@@ -128,7 +132,7 @@ address {
 }
 .nav li{
     display:inline;
-    padding-right: 0.05em;
+    padding-right: 0.2em;
 }
 
 .nav a{
@@ -175,7 +179,7 @@ address {
 
 article footer {
     font-size: 0.7em;
-    margin-top: 0.1em;
+    margin-top: 0.5em;
 }
 
 footer {

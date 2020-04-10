@@ -71,7 +71,7 @@ if (amtScrolled > h1Top + h1Height) {
         }
     
         // Iterate through each matching eleemnt, call the checkOneSection function for each one
-        document.querySelectorAll('.moment').forEach(checkOneSection)
+        document.querySelectorAll('.yeearClass').forEach(checkOneSection)
         
     
         $yearBar.innerHTML = `            
