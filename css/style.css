@@ -27,7 +27,7 @@ h3 {
     font-weight: 900;
 }
 
-img {
+.drawing img {
     background-color: white;
     display: block;
     margin-left: auto;
@@ -193,3 +193,4 @@ footer {
             width: 60%;
         }
     }
+}
