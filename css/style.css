@@ -39,6 +39,7 @@ h3 {
     border-style: solid;
     margin-top: 1em;
     margin-bottom: 1em;
+    filter: sepia(35%);
 }
 
 a {
@@ -149,7 +150,7 @@ address {
 }
 
 .moment img {
-    max-width: 17em;
+    max-width: 95%;
 }
 
 article footer {
@@ -165,7 +166,7 @@ footer {
 .second {
     align-self: auto; 
     margin: auto;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 50em) {
@@ -182,9 +183,6 @@ footer {
     @media screen and (min-width: 90em) {
         h1 {
             font-size: 3em;
-        }
-        .moment img {
-            max-width: 18em;
         }
         .masthead img {
             max-width: 90%;
