@@ -11,6 +11,8 @@ body {
     padding: 1.5em;
     text-align: center;
     font-size: 1.2em;
+    position: relative;
+    z-index: 7;
 }
 
 h1 {
@@ -58,15 +60,6 @@ img {
     margin-bottom: 1em;
     max-width: 70%;
 }
-
-
-
-
-  @keyframes moveImage {
-      100% {
-        transform: translateX(calc(100vw + 350px));
-      }
-  }
 
 a {
     color: tomato;
@@ -196,9 +189,8 @@ address {
 }
 
 .moment:nth-child(even) {
-        background-color: #ecde9e;
-  }
-
+    background-color: #ecde9e;
+}
 
 .moment {
     height: 95%;
@@ -210,11 +202,36 @@ address {
     transition: all 10s;
 }
 
-
-
 .moment img {
     max-width: 95%;
-    
+}
+
+.moment:nth-child(odd) img {
+    -webkit-animation: mover 20s infinite alternate;
+    animation: mover 20s infinite alternate;
+}
+
+.moment:nth-child(odd) img {
+    -webkit-animation: mover 20s infinite alternate;
+    animation: mover 20s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3em);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3em);
+    }
 }
 
 .cassette {
