@@ -195,6 +195,11 @@ address {
     width: auto;
 }
 
+.moment:nth-child(even) {
+        background-color: #ecde9e;
+  }
+
+
 .moment {
     height: 95%;
     font-size: 1.2em;
@@ -205,9 +210,22 @@ address {
     transition: all 10s;
 }
 
+
+
 .moment img {
     max-width: 95%;
     
+}
+
+.cassette {
+    height: 95%;
+    font-size: 1.2em;
+    padding: 1em;
+    -o-transition: all 10s;
+    -moz-transition: all 10s;
+    -webkit-transition: all 10s;
+    transition: all 10s;
+    background-color: #ffffff;
 }
 
 article footer {
