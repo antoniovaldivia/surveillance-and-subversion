@@ -221,7 +221,7 @@ address {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-3em);
+        transform: translateX(-1em);
     }
 }
 
@@ -230,7 +230,7 @@ address {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-3em);
+        transform: translateX(-1em);
     }
 }
 
@@ -275,6 +275,22 @@ footer {
     .moment img {
         max-width: 80%;
     }
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-3em);
+        }
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-3em);
+        }
+    }
     @media screen and (min-width: 90em) {
         h1 {
             font-size: 2.5em;
@@ -287,6 +303,22 @@ footer {
         }
         .moment img {
             max-width: 70%;
+        }
+        @-webkit-keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-5em);
+            }
+        }
+        @keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-5em);
+            }
         }
     }
 }
