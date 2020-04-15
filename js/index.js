@@ -88,7 +88,7 @@ const loadContentFromHtmlFile = (url) => {
 
 }
 
-window.addEventListener('load', theStateOfThings)
-window.addEventListener('scroll', theStateOfThings)
-window.addEventListener('resize', theStateOfThings)
-loadContentFromHtmlFile('about.html')
+window.addEventListener('load', theStateOfThings);
+window.addEventListener('scroll', theStateOfThings);
+window.addEventListener('resize', theStateOfThings);
+loadContentFromHtmlFile('about.html');
