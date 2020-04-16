@@ -65,6 +65,10 @@ a {
     color: tomato;
 }
 
+strong {
+    font-weight: 700;
+}
+
 time {
     font-size: 0.9em;
     font-weight: 700;
@@ -206,14 +210,22 @@ address {
     max-width: 95%;
 }
 
-.moment:nth-child(odd) img {
-    -webkit-animation: mover 20s infinite alternate;
-    animation: mover 20s infinite alternate;
+.limited {
+    max-width: 70%;
 }
 
-.moment:nth-child(odd) img {
-    -webkit-animation: mover 20s infinite alternate;
-    animation: mover 20s infinite alternate;
+.extended {
+    max-width: 0%;
+}
+
+.animated img {
+    -webkit-animation: mover 10s infinite alternate;
+    animation: mover 10s infinite alternate;
+}
+
+.animated img {
+    -webkit-animation: mover 10s infinite alternate;
+    animation: mover 10s infinite alternate;
 }
 
 @-webkit-keyframes mover {
