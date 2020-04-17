@@ -94,7 +94,7 @@ window.addEventListener('resize', theStateOfThings);
 loadContentFromHtmlFile('about.html');
 
 
-ByteLengthQueuingStrategy smoothelement = document.getElementById("yearLink"); 
+let smoothelement = document.getElementById("yearLink"); 
 smoothelement.onclick = showSmooth;
 
 function showSmooth (event) {
