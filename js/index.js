@@ -68,7 +68,7 @@ let theStateOfThings = () => {
     }
     document.querySelectorAll('.yearClass').forEach(checkOneSection)
     $yearBar.innerHTML = `            
-        <ol class="nav">${infoForElement}</ol>
+        <ol class="nav" id="newnav">${infoForElement}</ol>
          `;
 }
 
@@ -92,3 +92,11 @@ window.addEventListener('load', theStateOfThings);
 window.addEventListener('scroll', theStateOfThings);
 window.addEventListener('resize', theStateOfThings);
 loadContentFromHtmlFile('about.html');
+
+
+var smoothelement = document.getElementById("yearLink"); 
+smoothelement.onclick = showSmooth;
+
+function showSmooth (event) {
+    smoothelement.scrollIntoView({behavior: "smooth"});
+}
