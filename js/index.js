@@ -92,11 +92,3 @@ window.addEventListener('load', theStateOfThings);
 window.addEventListener('scroll', theStateOfThings);
 window.addEventListener('resize', theStateOfThings);
 loadContentFromHtmlFile('about.html');
-
-
-let smoothelement = document.getElementById("yearLink"); 
-smoothelement.onclick = showSmooth;
-
-function showSmooth (event) {
-    smoothelement.scrollIntoView({behavior: "smooth"});
-}
